@@ -1,0 +1,10 @@
+flask
+tensorflow
+pillow
+langchain
+langchain-community
+ctransformers
+sentence-transformers
+python-dotenv
+numpy 
+requests 
