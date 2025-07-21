@@ -109,6 +109,6 @@ If you have ideas for new features, improvements, or bug fixes, please open an i
 
 ## Contact
 
-For questions or support, open an issue or contact [your-email@example.com].
+For questions or support, open an issue or contact bindelapreetham2004@gmail.com.
 
 Empowering farmers with AI—one leaf at a time!
