@@ -1,85 +1,114 @@
 # AI Chatbot for Agricultural Assistance
 
-Welcome to the AI Chatbot for Agricultural Assistance! This project combines deep learning and conversational AI to help farmers and agricultural experts diagnose paddy diseases from leaf images and get instant, expert advice on treatment and prevention.
+Empowering farmers with AI—one leaf at a time!
+
+---
+
+## Project Overview
+
+This project is a fully local AI-powered web application designed to assist farmers and agricultural experts. It combines deep learning for paddy leaf disease recognition with a conversational LLM chatbot, delivering instant, actionable insights and expert advice—all from your own device, with no cloud dependency.
+
+---
 
 ## Features
-- Paddy Disease Prediction: Upload a leaf image and get instant disease classification using a trained deep learning model.
-- Conversational Chatbot: Ask any agriculture-related question and get expert, context-aware answers powered by a local LLM (Ollama).
-- Beautiful, Modern UI: Clean, responsive interface with background images and easy-to-use forms.
-- No Cloud Required: All AI runs locally—no OpenAI API key or internet required after setup!
 
-## Project Workflow
+- Paddy Disease Prediction  
+  Upload a photo of a paddy leaf and receive an instant, high-confidence diagnosis using a deep learning model.
 
-User Uploads Paddy Leaf Image → Model Predicts Disease → Display Predicted Disease & Image → User Chats with AI Bot → Bot Gives Disease-Specific & General Advice
+- Conversational Agro Chatbot  
+  Ask any agriculture-related question and get expert, context-aware answers powered by a local LLM (Ollama).
 
-1. Upload Image: User uploads a paddy leaf image via the web interface.
-2. Prediction: The deep learning model predicts the disease.
-3. Result Display: The predicted disease and uploaded image are shown.
-4. Chat: User can ask the AI bot for treatment, prevention, or any agri-related question.
-5. Expert Advice: The bot responds with actionable, context-aware advice.
+- Modern, Responsive UI  
+  Clean, visually appealing interface with dynamic backgrounds and intuitive forms.
+
+- 100% Local & Private  
+  All AI runs on your machine—no internet required after setup, and your data never leaves your device.
+
+---
 
 ## Project Structure
 
 ```
+.
 ├── app.py
 ├── chatbot.py
 ├── paddy_disease_model.h5
 ├── requirements.txt
 ├── README.md
-├── templates/
-│   └── index.html
+├── index.html
+├── style.css
 ├── static/
-│   ├── style.css
 │   ├── images/
 │   └── uploads/
 ```
 
-## Quickstart
+---
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   ```
-2. Set up a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Download the model:
-   - Place `paddy_disease_model.h5` in the project root (if not present)
-   - For chatbot, make sure Ollama is running with the required model (e.g., llama3.2:1b)
-5. Run the app:
-   ```bash
-   python app.py
-   ```
-6. Open your browser:
-   - Go to http://localhost:5001
+## Technology Stack
 
-## Tech Stack
-- Flask (Python web framework)
-- TensorFlow / Keras (Deep learning model)
-- Ollama (Local LLM for chatbot)
-- HTML/CSS (Frontend)
+- Backend: Flask (Python)
+- Deep Learning: TensorFlow / Keras
+- Chatbot: Ollama (local LLM), LangChain
+- Frontend: HTML, CSS (custom, responsive)
+- Image Processing: Pillow, NumPy
+
+---
+
+## How It Works
+
+1. Image Upload  
+   Users upload a paddy leaf image via the web interface.
+
+2. Disease Prediction  
+   The deep learning model analyzes the image and predicts the disease class with confidence scoring.
+
+3. Result Display  
+   The predicted disease and the uploaded image are displayed to the user.
+
+4. Expert Chat  
+   Users can chat with the AI bot for treatment, prevention, or any agriculture-related queries.
+
+5. Actionable Advice  
+   The bot responds with tailored, context-aware recommendations.
+
+---
+
+## User Experience
+
+- Intuitive Upload: Effortlessly upload images for instant analysis.
+- Dynamic Chat: Engage in natural conversations with the Agro Bot for expert guidance.
+- Visual Feedback: See your uploaded image and prediction results side-by-side.
+- Mobile Friendly: Responsive design for use on any device.
+
+---
 
 ## Example Use Cases
+
 - Diagnose paddy diseases from leaf images
 - Get instant treatment and prevention advice
-- Ask general agriculture questions (fertilizers, pests, best practices)
+- Ask about fertilizers, pest management, and best agricultural practices
+- Receive step-by-step guidance for crop health
 
-## Notes
+---
+
+## Notes & Customization
+
 - For best results, use clear, well-lit images of paddy leaves.
 - The chatbot works offline after initial setup (Ollama must be running locally).
-- You can customize the background images in `static/images/` for your own branding.
+- Customize background images in `static/images/` for your own branding.
+- All user data and images remain private and local.
+
+---
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Contributions are welcome.  
+If you have ideas for new features, improvements, or bug fixes, please open an issue or submit a pull request.
+
+---
 
 ## Contact
+
 For questions or support, open an issue or contact [your-email@example.com].
 
-Empowering farmers with AI—one leaf at a time! 
+Empowering farmers with AI—one leaf at a time!
