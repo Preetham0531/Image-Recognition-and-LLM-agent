@@ -1,0 +1,92 @@
+/* Chat message styling */
+.chat-response {
+    margin-bottom: 20px;
+}
+
+.chat-response p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.user-message {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    max-width: 80%;
+    margin-left: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Scrollbar styling */
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Form styling */
+input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: #4CAF50;
+}
+
+/* Button styling */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styling */
+.image-section, .chat-section {
+    transition: all 0.3s ease;
+}
+
+.image-section:hover, .chat-section:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    background-image: url('/static/images/main_bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
